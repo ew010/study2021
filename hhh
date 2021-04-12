@@ -1,1 +1,168 @@
-hhhhh
+20210412
+##### 注释
+
+```
+# -*- coding: utf-8 -*-
+# 单行注释
+'''
+这是
+多行注释
+'''
+```
+
+##### 保留字
+
+![image-20210409104826184](D:\software\图片\image-20210409104826184.png)
+
+在 Python 中，标识符中的字母是严格区分大小写的
+
+以下划线开头的标识符
+
+```
+以单下划线开头的标识符（如_width）表示不能直接访问的类属性
+以双下划线开头的标识符（如__add）表示类的私有成员
+以双下划线开头和结尾的是 Python 里专用的标识
+```
+
+变量赋值
+
+```
+变量名 = value;
+print(type(name))			使用内置函数 type()可以返回变量类型。
+
+age1=18
+age2=18
+print(id(age1))
+print(id(age2))			使用内置函数 id()可以返回变量所指的内存地址
+
+age=18
+print("你的年龄"+str(age))		str()函数用于将数值转换为字符串
+age=3.14+12.5j			复数
+```
+
+基本数据类型
+
+字符串
+
+```
+str1="huang"
+# 多行
+str2="""huang
+hong    jin
+"""
+print(r"huang\nhong")		# 输出结果：huang\nhong，r（或 R），那么该字符串将原样输出
+print("huang\nhong")
+```
+
+##### 布尔类型
+
+```
+print(int(True))    # 1
+print(int(False))   # 0
+```
+
+##### 常用类型转换函数
+
+```
+age=18
+str1=str(age)		将 x 转换为字符串
+int1=int(str1)		将 x 转换成整数类型
+float1=float(str1)	将 x 转换成浮点数类型
+```
+
+##### 基本输入和输出
+
+```
+name=input("请输入")      返回的都是字符串
+```
+
+##### 算术运算符
+
+```
+a = 7
+b = 2
+print(a + b )       # 9
+print(a - b )       # 5
+print(a / b )       # 3.5
+print(a // b )      # 3
+print(a % b )       # 1
+print(a ** b )      # 49
+```
+
+##### 比较（关系）运算符
+
+```
+a = 7
+b = 2
+print(a > b )       # True
+print(a < b )       # False
+print(a == b )       # False
+print(a != b )      # True
+print(a >= b )       # True
+print(a <= b )      # False
+```
+
+逻辑运算符
+
+```
+and		or  not
+```
+
+if 语句
+
+```
+if (a>b):
+    print("true")
+else:
+    print("false")
+--------------------------------
+if (a>18):
+    print("大于18")
+----------------------------------
+if (a>18):
+    print("大于18")
+elif (a<5):
+    print("小于5")
+else:
+    print("其他")
+```
+
+##### while 循环
+
+```
+while(a>0):
+    print(a)
+    a=a-1
+```
+
+##### for 循环
+
+```
+for i in range(1,10,2):
+    print(i)   # 1 3 5 7 9
+for i in range(4):
+    print(i)   # 0 1 2 3
+```
+
+##### break、continue、pass
+
+```
+for i in range(4):
+    if (i==2):
+        break
+    print(i)   # 0 1
+    
+for i in range(4):
+    if (i==2):
+        continue
+    print(i)   # 0 1 3
+
+for i in range(10):
+    if (i%2==0):
+        print(i)        # 0 2 4 6 8
+    else:
+        pass   # 占位符，不做任何事情
+```
+
+##### 列表
+20210412
